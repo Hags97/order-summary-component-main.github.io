@@ -1,0 +1,235 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+/*Variables*/
+
+:root{
+/*Primary*/
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+/*Neutral*/
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    background: url('./images/pattern-background-mobile.svg'), var(--Pale-blue);
+}
+
+.card{
+    width: 328px;
+    height: 567px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    font-size: var(--font-size);
+    font-family: 'Red hat display', sans-serif;
+    box-shadow: 2px 3px 10px hsl(228, 45%,44%, 0.1);
+    
+}
+
+.image img{
+    width: 328px;
+    height: 160px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.content h1{
+    padding-bottom: 17px;
+    font-weight: 900;
+    font-size: 1.35em;
+    letter-spacing: 0.3px;
+    margin-top: -10px;
+}
+
+.content p{
+    color: var(--Desaturated-blue);
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 0.95em;
+    margin-bottom: -27px;
+    letter-spacing: 0.2px;
+}
+
+.info-block{
+    width: 280px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    margin-bottom: -25px;
+    
+}
+.info-block img {
+    width: 50px;
+    height: 50px;
+    margin-right: -16px;
+}
+.info-block a{
+    color: var(--Bright-blue);
+    font-weight: 900;
+    font-size: 0.9em;
+}
+.info-block a:hover{
+    color: hsl(245, 75%, 67%);
+    cursor: pointer;
+    text-decoration: none;
+}
+.info{
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.info p:first-child{
+    font-weight: 900;
+    font-size: 0.9em;
+}
+.info p:nth-child(2)
+{
+    font-size: 0.9em;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.buttons button{
+    width: 280px;
+    height: 50px;
+    font-family: 'Red hat display', sans-serif;
+  
+}
+
+.btn1{
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: var(--Pale-blue);
+    font-size: 0.9em;
+    font-weight: 900;
+    margin-bottom: 6px;
+    box-shadow: 0px 15px 25px  hsla(245, 75%, 52%, .25);
+} 
+.btn1:hover{
+    background-color: hsl(245, 75%, 67%);
+    cursor: pointer;
+    color: white;
+}
+
+.btn2{
+    font-weight: 900;
+    font-size: 0.9em;
+    color: var(--Desaturated-blue);
+    background-color: var(--pale-blue);
+    border: none;
+    margin-bottom: 15px;
+}
+
+.btn2:hover{
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+
+@media (min-width: 1440px)
+{
+    body{
+        width: 100%;
+        height: 100vh;
+        background: url('./images/pattern-background-desktop.svg'), var(--Pale-blue); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: -30% ;
+    }
+
+    .card{
+        width: 450px;
+        height: 695px;
+    }
+
+    .image img{
+        width: 450px;
+        height: 220px;
+    }
+
+    .content h1{
+        font-size: 1.72em;
+        font-weight: 900;
+        margin-top: -20px;
+    }
+    .content p{
+        font-size: 1.05em;
+        padding-left: 65px;
+        padding-right: 65px;
+        line-height: 25px;
+        letter-spacing: 0.2px;
+    }
+
+    .info-block{
+        width: 352px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -25px;
+    }
+    .info-block img{
+        margin-left: 25px;
+        margin-right: -39px;
+    }
+    .info-block a{
+        margin-right: 25px;
+    }
+
+    .info-block .info p{
+        font-size: 1em;
+        padding-right: 29px;
+    }
+
+
+    .buttons button{
+        width: 352px;
+        height: 50px;
+    }
+    .buttons{
+        margin-bottom: 15px;
+        margin-top: -20px;
+    }
+
+}
