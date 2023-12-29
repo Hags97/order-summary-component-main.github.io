@@ -20,5 +20,5 @@ Your users should be able to:
 
 - See hover states for interactive elements
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel. 
 
